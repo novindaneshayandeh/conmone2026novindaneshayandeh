@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>دعوتنامه نمایشگاه | نوین دانش آینده</title>
+    <title>دعوت‌نامه نمایشگاه CONMINE | نوین دانش آینده</title>
 
     <meta name="description"
-          content="دعوتنامه بازدید از غرفه شرکت نوین دانش آینده در بیستمین نمایشگاه بین‌المللی صنایع معدنی، ماشین‌آلات و تجهیزات معدن، راهسازی و صنایع وابسته.">
+          content="شرکت نوین دانش آینده (ندا) از شما برای بازدید از غرفه خود در بیستمین نمایشگاه بین‌المللی صنایع معدنی، ماشین‌آلات و تجهیزات معدن، راهسازی و صنایع وابسته دعوت می‌کند.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +22,8 @@
             --navy: #152f4d;
             --text: #263747;
 
-            /* شفافیت تصویر پس‌زمینه */
-            --background-opacity: 0.32;
+            /* میزان نمایان بودن تصویر پس‌زمینه */
+            --background-opacity: 0.22;
         }
 
         * {
@@ -43,7 +43,7 @@
             font-family: 'Vazirmatn', sans-serif;
         }
 
-        /* قاب اصلی دعوتنامه */
+        /* قاب اصلی دعوت‌نامه */
         .invitation {
             position: relative;
             isolation: isolate;
@@ -51,16 +51,15 @@
 
             width: 100%;
             max-width: 1000px;
-            min-height: 760px;
-            padding: 65px 80px;
+            min-height: 900px;
+            padding: 65px 75px;
 
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
 
             text-align: center;
-            background: #d9dadd;
+            background: #c9cbd0;
             color: var(--text);
         }
 
@@ -86,14 +85,24 @@
             inset: 0;
             z-index: -1;
 
-            background: rgba(190, 193, 198, 0.68);
+            background: rgba(165, 168, 174, 0.64);
             pointer-events: none;
         }
 
         .content {
             position: relative;
             width: 100%;
-            max-width: 820px;
+            max-width: 850px;
+        }
+
+        /* عبارت بالای عنوان */
+        .eyebrow {
+            margin: 0 0 8px;
+
+            color: var(--burgundy);
+            font-size: clamp(20px, 2.6vw, 27px);
+            font-weight: 700;
+            line-height: 1.8;
         }
 
         /* عنوان اصلی نمایشگاه */
@@ -101,38 +110,60 @@
             margin: 0;
 
             color: var(--burgundy);
-            font-size: clamp(28px, 4vw, 43px);
+            font-size: clamp(30px, 4.5vw, 46px);
             font-weight: 800;
             line-height: 1.8;
         }
 
-        /* عنوان فرعی نمایشگاه */
+        /* عنوان فارسی و انگلیسی */
         .exhibition-subtitle {
-            margin: 8px 0 0;
+            margin: 0;
 
             color: var(--navy);
-            font-size: clamp(17px, 2.2vw, 24px);
-            font-weight: 600;
-            line-height: 2;
+            font-size: clamp(25px, 3.6vw, 39px);
+            font-weight: 800;
+            line-height: 1.8;
         }
 
-        /* خط جداکننده */
+        .english-title {
+            display: inline-block;
+            direction: ltr;
+            margin-right: 8px;
+
+            color: var(--burgundy);
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 800;
+            letter-spacing: 4px;
+        }
+
+        /* توضیح موضوع نمایشگاه */
+        .exhibition-description {
+            margin: 12px 0 0;
+
+            color: var(--text);
+            font-size: clamp(15px, 2vw, 20px);
+            font-weight: 500;
+            line-height: 2.2;
+        }
+
+        /* جداکننده */
         .divider {
             width: 90px;
             height: 3px;
-            margin: 35px auto;
+            margin: 32px auto;
 
             background: var(--burgundy);
         }
 
         /* متن دعوت */
         .invitation-text {
-            max-width: 790px;
+            max-width: 800px;
             margin: 0 auto;
 
             color: var(--text);
-            font-size: clamp(17px, 2vw, 21px);
-            font-weight: 400;
+            font-size: clamp(17px, 2.1vw, 22px);
+            font-weight: 600;
             line-height: 2.5;
         }
 
@@ -144,34 +175,34 @@
         /* اطلاعات نمایشگاه */
         .venue {
             width: 100%;
-            margin-top: 34px;
-            padding-top: 22px;
+            margin-top: 38px;
+            padding-top: 25px;
 
-            border-top: 1px solid rgba(118, 29, 43, 0.35);
+            border-top: 1px solid rgba(118, 29, 43, 0.38);
 
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 13px;
         }
 
         .venue p {
             margin: 0;
 
             color: var(--navy);
-            font-size: 17px;
-            font-weight: 500;
+            font-size: clamp(15px, 1.8vw, 19px);
+            font-weight: 600;
             line-height: 2;
         }
 
         .venue strong {
             color: var(--burgundy);
-            font-weight: 700;
+            font-weight: 800;
         }
 
-        /* لوگوی بزرگ‌تر شرکت */
+        /* لوگوی بزرگ شرکت */
         .logo-container {
             width: 100%;
-            margin-top: 32px;
+            margin-top: 35px;
 
             display: flex;
             justify-content: center;
@@ -181,27 +212,40 @@
         .logo-container img {
             display: block;
 
-            width: 230px;
-            max-width: 65%;
-            max-height: 130px;
+            width: 250px;
+            max-width: 70%;
+            max-height: 140px;
             height: auto;
 
             object-fit: contain;
         }
 
-        /* نسخه موبایل */
+        /* موبایل */
         @media (max-width: 600px) {
             body {
                 padding: 12px;
             }
 
             .invitation {
-                min-height: 700px;
+                min-height: 780px;
                 padding: 42px 22px;
             }
 
             .divider {
-                margin: 25px auto;
+                margin: 24px auto;
+            }
+
+            .exhibition-subtitle {
+                line-height: 1.9;
+            }
+
+            .english-title {
+                letter-spacing: 2px;
+                margin-right: 4px;
+            }
+
+            .exhibition-description {
+                line-height: 2;
             }
 
             .invitation-text {
@@ -211,20 +255,17 @@
             .venue {
                 margin-top: 26px;
                 padding-top: 20px;
-            }
-
-            .venue p {
-                font-size: 15px;
+                gap: 10px;
             }
 
             .logo-container {
-                margin-top: 25px;
+                margin-top: 27px;
             }
 
             .logo-container img {
-                width: 180px;
-                max-width: 65%;
-                max-height: 110px;
+                width: 190px;
+                max-width: 70%;
+                max-height: 115px;
             }
         }
     </style>
@@ -233,23 +274,30 @@
 <body>
 
     <main class="invitation">
-
         <div class="content">
 
             <!-- عنوان نمایشگاه -->
             <header>
+                <p class="eyebrow">بیستمین</p>
+
                 <h1 class="exhibition-title">
-                    بیستمین نمایشگاه بین‌المللی صنایع معدنی
+                    نمایشگاه بین‌المللی
                 </h1>
 
-                <p class="exhibition-subtitle">
-                    ماشین‌آلات و تجهیزات معدن، راهسازی و صنایع وابسته
+                <h2 class="exhibition-subtitle">
+                    کان‌ماین
+                    <span class="english-title">CONMINE</span>
+                </h2>
+
+                <p class="exhibition-description">
+                    صنایع معدنی، ماشین‌آلات و تجهیزات معدن،
+                    راهسازی و صنایع وابسته
                 </p>
             </header>
 
             <div class="divider"></div>
 
-            <!-- متن دعوتنامه -->
+            <!-- متن دعوت -->
             <section>
                 <p class="invitation-text">
                     شرکت
@@ -260,7 +308,7 @@
                 </p>
             </section>
 
-            <!-- اطلاعات نمایشگاه -->
+            <!-- اطلاعات زمان و مکان -->
             <footer class="venue">
 
                 <p>
@@ -273,8 +321,8 @@
                 </p>
 
                 <p>
-                    <strong>مکان:</strong>
-                    مرکز نمایشگاه‌های بین‌المللی تهران
+                    <strong>محل برگزاری:</strong>
+                    محل دائمی نمایشگاه‌های بین‌المللی تهران
                 </p>
 
             </footer>
@@ -288,7 +336,6 @@
             </div>
 
         </div>
-
     </main>
 
 </body>
