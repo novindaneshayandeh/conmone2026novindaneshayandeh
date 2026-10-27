@@ -21,6 +21,8 @@
             --burgundy-light: #963849;
             --navy: #152f4d;
             --text: #263747;
+
+            /* شفافیت تصویر پس‌زمینه */
             --background-opacity: 0.22;
         }
 
@@ -41,7 +43,7 @@
             font-family: 'Vazirmatn', sans-serif;
         }
 
-        /* قاب اصلی */
+        /* قاب اصلی دعوتنامه */
         .invitation {
             position: relative;
             isolation: isolate;
@@ -49,7 +51,7 @@
 
             width: 100%;
             max-width: 1000px;
-            min-height: 740px;
+            min-height: 760px;
             padding: 65px 80px;
 
             display: flex;
@@ -104,7 +106,7 @@
             line-height: 1.8;
         }
 
-        /* عنوان فرعی */
+        /* عنوان فرعی نمایشگاه */
         .exhibition-subtitle {
             margin: 8px 0 0;
 
@@ -114,7 +116,7 @@
             line-height: 2;
         }
 
-        /* خط تزئینی */
+        /* خط جداکننده */
         .divider {
             width: 90px;
             height: 3px;
@@ -139,17 +141,17 @@
             font-weight: 800;
         }
 
-        /* اطلاعات سالن و مکان */
+        /* اطلاعات نمایشگاه */
         .venue {
             width: 100%;
-            margin-top: 38px;
-            padding-top: 24px;
+            margin-top: 34px;
+            padding-top: 22px;
 
             border-top: 1px solid rgba(118, 29, 43, 0.35);
 
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
         }
 
         .venue p {
@@ -166,10 +168,10 @@
             font-weight: 700;
         }
 
-        /* لوگوی شرکت */
+        /* لوگوی بزرگ‌تر شرکت */
         .logo-container {
             width: 100%;
-            margin-top: 30px;
+            margin-top: 32px;
 
             display: flex;
             justify-content: center;
@@ -179,9 +181,9 @@
         .logo-container img {
             display: block;
 
-            width: 155px;
-            max-width: 45%;
-            max-height: 90px;
+            width: 230px;
+            max-width: 65%;
+            max-height: 130px;
             height: auto;
 
             object-fit: contain;
@@ -194,7 +196,7 @@
             }
 
             .invitation {
-                min-height: 650px;
+                min-height: 700px;
                 padding: 42px 22px;
             }
 
@@ -207,7 +209,7 @@
             }
 
             .venue {
-                margin-top: 28px;
+                margin-top: 26px;
                 padding-top: 20px;
             }
 
@@ -220,7 +222,9 @@
             }
 
             .logo-container img {
-                width: 125px;
+                width: 180px;
+                max-width: 65%;
+                max-height: 110px;
             }
         }
     </style>
@@ -232,6 +236,7 @@
 
         <div class="content">
 
+            <!-- عنوان نمایشگاه -->
             <header>
                 <h1 class="exhibition-title">
                     بیستمین نمایشگاه بین‌المللی صنایع معدنی
@@ -244,6 +249,7 @@
 
             <div class="divider"></div>
 
+            <!-- متن دعوتنامه -->
             <section>
                 <p class="invitation-text">
                     شرکت
@@ -254,7 +260,14 @@
                 </p>
             </section>
 
+            <!-- اطلاعات نمایشگاه -->
             <footer class="venue">
+
+                <p>
+                    <strong>زمان برگزاری:</strong>
+                    ۶ تا ۹ آبان
+                </p>
+
                 <p>
                     <strong>سالن شماره ۱۰ | غرفه ۱۰۲۵</strong>
                 </p>
@@ -263,9 +276,10 @@
                     <strong>مکان:</strong>
                     مرکز نمایشگاه‌های بین‌المللی تهران
                 </p>
+
             </footer>
 
-            <!-- لوگو: فایل logo.png باید کنار index.html باشد -->
+            <!-- لوگوی شرکت -->
             <div class="logo-container">
                 <img
                     src="logo.png"
